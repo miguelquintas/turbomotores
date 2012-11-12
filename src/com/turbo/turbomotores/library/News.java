@@ -5,7 +5,6 @@ import java.util.List;
 import android.text.format.DateFormat;
 
 public class News {
-	
 	public int id;
 	public String url;
 	public String title;
@@ -13,8 +12,9 @@ public class News {
 	public String text;
 	public String author;
 	public DateFormat date;
-	public List<String> categories;
-	public List<String> tags;
+	public List<Category> categories;
+	public List<Tag> tags;
+	
 	public int getId() {
 		return id;
 	}
@@ -57,18 +57,16 @@ public class News {
 	public void setDate(DateFormat date) {
 		this.date = date;
 	}
-	public List<String> getCategories() {
+	public List<Category> getCategories() {
 		return categories;
 	}
-	public void setCategories(List<String> categories) {
+	public void setCategories(List<Category> categories) {
 		this.categories = categories;
 	}
-	public List<String> getTags() {
+	public List<Tag> getTags() {
 		return tags;
 	}
-	public void setTags(List<String> tags) {
+	public void setTags(List<Tag> tags) {
 		this.tags = tags;
 	}
-	
-	
 }
