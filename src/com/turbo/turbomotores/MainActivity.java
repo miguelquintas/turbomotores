@@ -27,6 +27,6 @@ public class MainActivity extends Activity {
     public void start(){
     	
     	getNews = new GetNews();
-    	getNews.getNewsFromUrl();
+    	getNews.getNewsFromUrl(this);
     }
 }

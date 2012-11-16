@@ -2,23 +2,22 @@ package com.turbo.turbomotores.library;
 
 import java.util.List;
 
-import android.text.format.DateFormat;
-
-public class News {
-	public int id;
+public class Article {
+	public long id;
 	public String url;
 	public String title;
 	public String excerpt;
 	public String text;
 	public String author;
-	public DateFormat date;
+	public String imageUrl;
+	public String date;
 	public List<Category> categories;
 	public List<Tag> tags;
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getUrl() {
@@ -51,11 +50,17 @@ public class News {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public DateFormat getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(DateFormat date) {
+	public void setDate(String date) {
 		this.date = date;
+	}
+	public String getImageUrl() {
+		return imageUrl;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	public List<Category> getCategories() {
 		return categories;
